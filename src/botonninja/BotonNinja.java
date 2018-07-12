@@ -20,19 +20,20 @@ public class BotonNinja {
      */
     public static void main(String[] args) {
         JFrame A = new JFrame("A"), B = new JFrame("B");
-        A.setResizable(false);
+        
         A.setLocation(40, 40);
         A.setContentPane(new Primera());
         A.pack();
         A.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        A.setResizable(false);
         A.setVisible(true);
         Auxiliar.ConfiguracionNinja(Segunda.getBlack(),Primera.getWhite());
         
-        B.setResizable(false);
         B.setLocation(260, 40);
         B.setContentPane(new Segunda());
         B.pack();
         B.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        B.setResizable(false);
         B.setVisible(true);
         Auxiliar.ConfiguracionNinja(Primera.getWhite(),Segunda.getBlack());
     }
